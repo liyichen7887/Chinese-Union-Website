@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>about</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/icon-font.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    
+    <!-- Custom CSS for the 'Thumbnail Gallery' Template -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <style type="text/css">
+      p {
+      font-size: 30px;
+      }
+    </style>
+</head>
+
+<body>
+
+  <nav class="custom-nav" role="navigation" style="margin-top:-50px;">
+    <div style="width:1000px;">
+      <div class="navbar-header">
+	
+	<img src="images/logos/logo.png" class="logo" height="60" width="60"/>
+	<a class="navbar-brand" style="font-size:40;"  href="/index">UCSD CU</a>
+      </div>
+      
+      <div class="collapse navbar-collapse">
+	<ul class="nav navbar-nav nav-text">			      
+	  <li><a href="/about">关于我们</a></li>
+	  <li><a href="/">CU新闻</a></li>
+	  <li><a href="/">锦囊</a></li>
+	  <li><a href="/sponsor">赞助商</a></li>
+	  <li><a href="/">联系CU</a></li>
+	</ul>
+	
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <img src="images/about.jpg" style="width:100%;" />
+    <div class="exhibition">
+      <h3>关于CU</h3>
+      <div>中国学生联合会（CU）是目前圣地亚哥地区规模最大的非盈利性华人学生组织，于2005年由数位就读于加州大学圣地亚哥分校(UCSD)的中国学生建立，旨在联合南加州华人学生资源并帮助华人学生更好地融入美国校园与社会生活。CU以服务华人学生、弘扬中国文化为宗旨，每年举办各种精彩纷呈的学生活动，并开展多项帮助广大华人的服务项目，得到了学生以及其他南加州华人学生社团的一致好评。如今的CU影响范围已不再局限于圣地亚哥地区，随着与南加州甚至其他州各院校的友好合作进一步深入，CU将未来目标定位为服务全美华人学生。
+      </div>
+    </div>
+    <div class="block">
+      <h4>我们现在在做的：</h4>
+      提供接机一条龙等全套新生入学服务，帮助学生快速完成新学期过渡。<br/>
+      举办夜市，海钓，万圣节派对等各类精彩十足的学生课外活动。<br/>
+      与Chase等加州百余所商家企业保持合作关系,并给予学生最大的商家优惠。<br/>
+      与许多美国及国内大学学生会保持友好关系，以开展新生见面会，非诚勿扰等大型校际合作。<br/>
+    </div>
+    <div class="block">
+      <h4>我们的团队：</h4>
+    </div>
+
+      
+  </div>
+
+
+  <div class="bottom-menu bottom-menu-inverse bottom" style="margin-top:200px; padding-left:80px;">
+    <div class="container" style="width:1300px;">
+      <div class="row" >
+        <div class="col-md-8" >
+          <ul class="bottom-links">
+            <li style="margin-left:100px;"><a href="/about">关于我们</a></li>
+            <li style="margin-left:100px;"><a href="http://page.renren.com/601273675">人人主页</a></li>
+            <li style="margin-left:100px;"><a href="https://www.facebook.com/groups/2203090277/">Facebook主页</a></li>
+            <li style="margin-left:100px;"><a href="#fakelink">微信平台</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <!-- JavaScript -->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+</html>

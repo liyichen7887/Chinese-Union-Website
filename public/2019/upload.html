@@ -1,0 +1,76 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>2019 新生相册上传</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.0.min.js"></script>
+  
+</head>
+
+<body>
+  
+  <div id="main">
+    <h1>上传新生相册</h1>
+
+    <input type="file" id="profilePhotoFileUpload">
+    <br><h4>姓名: </h4><input type="text" id="Name" value="">
+    <br><h4>学院: </h4><input type="text" id="College" value="">
+    <br><h4>专业: </h4><input type="text" id="Major" value="">
+    <br><h4>简介: </h4><input type="text" id="Memo" value="">
+    <br><br><input type="submit" value="Submit" onclick="submit()">
+
+  </div>
+
+  <script type="text/javascript">
+    Parse.initialize("Uv6IWpKYbLvknOqrz6kEcNVMcWDlAbN6BjuMjGxG", "TWXqC8vOkLT9HBjc06ANpm15FiPXaP0Nv1GeEgKZ");    
+
+    function submit()
+    {
+      var fileUploadControl = $("#profilePhotoFileUpload")[0];
+      var studentname = $("#Name")[0];
+      var college = $("#College")[0];
+      var major = $("#Major")[0];
+      var memo = $("#Memo")[0];
+
+      if (fileUploadControl.files.length > 0) 
+      {
+        var file = fileUploadControl.files[0];
+        var name = "photo.jpg";
+       
+        var parseFile = new Parse.File(name, file);
+      }
+    
+      parseFile.save().then(function() {
+        // The file has been saved to Parse.
+      }, function(error) {
+        // The file either could not be read, or could not be saved to Parse.
+      });
+
+      var CU2019 = Parse.Object.extend("Album2019");
+      var new2019er = new CU2019();
+      new2019er.set("name", studentname.value);
+      new2019er.set("college", college.value);
+      new2019er.set("major", major.value);
+      new2019er.set("memo", memo.value);
+      new2019er.set("photo", parseFile);
+      new2019er.save();
+      alert(studentname.value);
+      
+      $("#Name")[0].value = "";
+      $("#College")[0].value = "";
+      $("#Major")[0].value = "";
+      $("#Memo")[0].value = "";
+      //window.location.reload();
+    }
+  </script>
+
+  <script type="text/javascript">
+    
+  </script>
+</body>
+
+</html>
